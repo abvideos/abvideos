@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  
+  background-image: url('https://i.postimg.cc/fR2cgPXm/cloudy-day.png');
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #43437d;
+  
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform:uppercase;
+  letter-spacing:.6px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #77c3ec;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+  background-color:#fefbea;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+  
+  .mainblock{
+    width:70%;
+    overflow:hidden;
+    margin-top:10px;
+  }
+  .buttonone{
+    float:left;
+    padding:15px;
+    background-color:#77C3EC;
+    margin:20px;
+    border-radius:80px;
+  }
+  .buttontwo{
+    float:left;
+    padding:15px;
+    background-color:#77C3EC;
+    margin:10px;
+    border-radius:80px;
+  }
+  
+  .buttonone:hover{
+    opacity:0.5;
+  }
+  
+  .buttontwo:hover{
+    opacity:0.5;
+  }
+  
+  .pagebutton{
+    padding:15px;
+    background-color:#77C3EC;
+    margin:20px;
+    border-radius:80px;
+    text-decoration:none;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:20px;
+    letter-spacing:1px;
+    
+  }
+  
+  .pagebutton:hover{
+    opacity:0.5;
+  }
+  .buttonlink{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    text-transform:uppercase;
+    letter-spacing:.75px;
+    font-weight:200;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="color:#fff; font-size:1.7em;opacity:0.9; letter-spacing:1px;text-transform:uppercase;">ABDLVideos.ORG</h2>
+  <center>
+  <div class="mainblock">
+    <center>
+    <div class="buttonone">
+   <a class="buttonlink"href="/abdl-pictures">ABDL Pictures
+      </a>
+        
+      </div>
+    <div class="buttonone">
+      <a class="buttonlink"href="/abdl-directory">Directory
+      </a></div>
+    <div class="buttonone"><a class="buttonlink"href="/about">ABOUT US
+      </a></div>
+ 
+  
+    <div class="buttonone">
+      <a class="buttonlink"href="/contributors">CONTRIBUTORS</a></div>
+    <div class="buttonone"><a class="buttonlink"href="/shop-abdl-diapers">Shop Diapers</a></div>
+      
+    <div class="buttonone"><a class="buttonlink"href="/shop-abdl-clothing">Shop Clothing</a></div>
+      
+  </div> 
+  <br><br>
+    
+  </div>
+  
+  
+</div>
+
+<div id="navbar">
+  <a class="active" href="/">Videos</a>
+  <a href="/abdl-pictures">Pictures</a>
+  <a href="/about">About</a>
+</div>
+
+<div class="content">
+  <center>videos
+    
+    <br><br>
+    
+    <a href="" class="pagebutton">View All Videos</a>
+    
+  <br><br>
+  pictures
+    <br><br>
+    
+    <a href="" class="pagebutton">View All Pictures</a>
+  <br><br>
+  about us
+    <br><br>
+    <a href="" class="pagebutton">Learn More</a>
+  </center>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
